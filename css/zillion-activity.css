@@ -1,0 +1,374 @@
+/* 大背景 */
+/* .zillion-act-wrapper{
+    width:100%;
+    height:2644px;
+    background:url(../images/zillion-bbg.png) no-repeat center;
+} */
+/* 走格子部分 */
+.go-grid-box{width:100%;background-repeat:no-repeat;background-position:center;}
+.grid-rel{position:relative;}
+.go-gridTop-box{
+    height:630px;
+    background-image:url(../images/zillion-sbg001.jpg);
+}
+.go-gridTop-box .userKu-icon{
+     position:absolute;
+    top:337px;
+    left:63px; 
+    /* display:block;
+    margin-left:65px; */
+    width:112px;
+    height:140px;
+    background:url(../images/zillion-icon.png) no-repeat -10px 0px;
+    z-index:7;
+}
+.go-gridTop-box .userKu-icon.kubao-jump{
+    -webkit-animation: kubaoup-down .8s ease infinite 80ms ;
+    animation: kubaoup-down .8s ease infinite 80ms ; 
+}
+/* css3动画 */
+@keyframes kubaoup-down{from{-webkit-transform:translate(0,-8px);transform:translate(0,-8px)}to{-webkit-transform:translate(0,8px);transform:translate(0,8px)}}
+/* 起点 */
+.go-gridTop-box .start-point{
+    position:absolute;
+    top:385px;
+    left:165px;
+    width:48px;
+    height:53px;
+    background:url(../images/start-icon.png) no-repeat center;
+    z-index:6;
+}
+.go-gridTop-box .throw-dice{
+    position:absolute;
+    top:565px;
+    left:50%;
+    margin-left:-152px;
+    width:305px;
+    height:110px;
+    line-height:110px;
+    text-align:center;
+    background:url(../images/zillion-icon.png) no-repeat -178px 0px;
+    z-index:8;
+}
+.go-gridTop-box .dice-icon{
+    position:absolute;
+    top:565px;
+    left:50%;
+    margin-left:-45px;
+    width:90px;
+    height:90px;
+    background:url(../images/dice.png) no-repeat -4px -3px;
+    z-index:9;
+}
+.go-gridTop-box .dice-icon.dice_aim1{background-position:-5px -4px}
+.go-gridTop-box .dice-icon.dice_aim2{background-position:-5px -107px}
+.go-gridTop-box .dice-icon.dice_aim3{background-position:-5px -212px}
+.go-gridTop-box .dice-icon.dice_aim4{background-position:-5px -317px}
+.go-gridTop-box .dice-icon.dice_aim5{background-position:-5px -427px}
+.go-gridTop-box .dice-icon.dice_aim6{background-position:-5px -535px}
+.go-gridTop-box .dice-icon.dice_aimt{background-position:-5px -651px}
+.go-gridTop-box .dice-icon.dice_aims{background-position:-5px -763px}
+.go-gridTop-box .dice-icon.dice_aime{background-position:-5px -876px}
+/* 走格子游戏部分 */
+/* 骰子动画 */
+ .go-gridTop-box .go-grid-game{position:relative;}
+.go-gridTop-box .go-grid-game li{
+    position:absolute;
+    width:128px;
+    height:132px;
+}
+.go-gridTop-box .go-grid-game .grid-num1{top:347px;left:226px;}
+.go-gridTop-box .go-grid-game .grid-num2{top:347px;left:380px;}
+.go-gridTop-box .go-grid-game .grid-num3{top:347px;left:535px;}
+.go-gridTop-box .go-grid-game .grid-num4{top:347px;left:690px;}
+.go-gridTop-box .go-grid-game .grid-num5{top:347px;left:844px;}
+.go-gridTop-box .go-grid-game .grid-num6{top:347px;left:998px;}
+.go-gridTop-box .go-grid-game .grid-num7{top:499px;left:998px;}
+.go-gridTop-box .go-grid-game .grid-num8{top:651px;left:998px;}
+.go-gridTop-box .go-grid-game .grid-num9{top:803px;left:998px;}
+.go-gridTop-box .go-grid-game .grid-num10{top:955px;left:998px;}
+.go-gridTop-box .go-grid-game .grid-num11{top:1107px;left:998px;}
+.go-gridTop-box .go-grid-game .grid-num12{top:1107px;left:844px;}
+.go-gridTop-box .go-grid-game .grid-num13{top:1107px;left:690px;}
+.go-gridTop-box .go-grid-game .grid-num14{top:1107px;left:535px;}
+.go-gridTop-box .go-grid-game .grid-num15{top:1107px;left:380px;}
+.go-gridTop-box .go-grid-game .grid-num16{top:1107px;left:226px;}
+.go-gridTop-box .go-grid-game .grid-num17{top:1107px;left:72px;}
+.go-gridTop-box .go-grid-game .grid-num18{top:955px;left:72px;}
+.go-gridTop-box .go-grid-game .grid-num19{top:803px;left:72px;}
+.go-gridTop-box .go-grid-game .grid-num20{top:651px;left:72px;}
+.go-gridTop-box .go-grid-game .grid-num21{top:499px;left:72px;}
+.go-gridBottom-box{height:685px;background-image:url(../images/zillion-sbg002.jpg);}
+.go-gridBottom-box .throwDice-infoBox{
+    width:545px;
+    margin:0 auto;
+    height:192px;
+    background:#412c2a;
+    border:2px solid #3b2927;
+    border-radius:10px;
+    padding:35px 20px 0;
+}
+.go-gridBottom-box .remnant-info{
+    text-align:center;
+    padding:60px 0;
+    color:#f6dba3;
+    font-weight:bold;
+    font-size:20px;
+}
+.go-gridBottom-box .remnant-info a{
+    color:#f6dba3;
+    text-decoration:underline;
+    margin-left:20px;
+}
+.go-gridBottom-box .remnant-info a:hover{color:#0082df;}
+.go-gridBottom-box .infoBox-top{font-size:18px;color:#f6dba3;}
+.go-gridBottom-box .infoBox-top b{font-weigth:bold;font-size:24px;}
+.go-gridBottom-box .infoBox-main p{color:#c2ac7e;line-height:30px;padding:20px 0 15px;}
+.infoBox-main .copy-shareAct {
+    width:530px;
+    height:36px;
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(59,41,39,.8);
+    -moz-box-shadow: 0px 0px 1px 1px rgba(59,41,39,.8);
+    box-shadow: 0px 0px 1px 1px rgba(59,41,39,.8);
+    position:relative;
+}
+.infoBox-main .copy-shareAct .copy-info{width:430px;height:36px;line-height:36px;color:#b9a274;background:#5f4442;padding-left:10px;}
+.infoBox-main .copy-shareAct .copy-btn{
+    width:89px;
+    height:36px;
+    line-height:36px;
+    border-left:1px solid #412c2a;
+    text-align:center;
+    background:#7f574c;
+    background: -moz-linear-gradient(top,  #7f574c 0%, #67473e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7f574c), color-stop(100%,#67473e));
+    background: -webkit-linear-gradient(top,  #7f574c 0%,#67473e 100%);
+    background: -o-linear-gradient(top,  #7f574c 0%,#67473e 100%);
+    background: -ms-linear-gradient(top,  #7f574c 0%,#67473e 100%);
+    background: linear-gradient(to bottom,  #7f574c 0%,#67473e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f574c', endColorstr='#67473e',GradientType=0 );
+    color:#f6dba3;
+    font-weight:bold;
+    cursor:pointer;
+}
+/* 活动动态 */
+.actDynamic-box{height:269px;background:url(../images/actDynamic.jpg) no-repeat center;}
+.actDynamic-box .actDynamic{padding-top:55px;}
+.actDynamic .actDynamic-l{font-size:18px;color:#b9a274;margin-left:45px;margin-top:17px;}
+.actDynamic .actDynamic-l b{font-size:24px;vertical-align:-3px;padding:0 15px;}
+.actDynamic .actDynamic-r{
+    margin-left:80px;
+    width:800px;
+    height:65px;
+    line-height:65px;
+    text-align:center;
+}
+.actDynamic .actDynamic-r .title{color:#b9a274;font-weight:bold;font-size:18px;}
+.actDynamic .actDynamic-r .dynamic-box{overflow:hidden;width:700px;height:65px;white-space:nowrap;}
+.actDynamic .actDynamic-r ul{display:inline-block;}
+.actDynamic .actDynamic-r ul li{color:#b9a274;display:inline-block;margin:0 19px;}
+.zillion-h2{
+    width:315px;
+    height:120px;
+    line-height:110px; 
+    text-align:center;
+    background:url(../images/zillion-icon.png) no-repeat 0px -150px;
+    color:#c4ae83;
+    font-size:36px;
+    font-weight:bold;
+}
+.win-user-box .zillion-h2{
+    position:absolute;
+    top:-60px;
+    left:50%;
+    margin-left:-157px;
+}
+/* 中奖记录 */
+.win-user-box{height:459px;background-image:url(../images/zillion-sbg003.jpg);}
+.win-user-box .win-user{
+    border:6px solid #4e3634;
+    background:#372423;
+    padding:70px 15px 28px;
+    margin-bottom:90px;
+    border-radius:20px;
+}
+.win-user-box table{width:100%;}
+.win-user-box table .numCol{width:180px;}
+.win-user-box table .priceCol{width:820px;}
+.win-user-box table .timeCol{width:210px;}
+.win-user-box table .padP-r{padding-right:20px;}
+.win-user-box table .padT-r{padding-right:65px;}
+.win-user-box table tr.head{background:#4e3634;}
+.win-user-box table td,.win-user-box table th{color:#c4ae83;font-size:18px;text-align:center;height:42px;line-height:42px;}
+.win-user-box .no-userPrice{width:100%;text-align:center;font-size:18px;color:#c4ae83;padding:85px 0;}
+
+/* 活动说明 */
+.act-rule-box{height:601px;background-image:url(../images/zillion-sbg004.jpg);}
+.act-rule-box h2{margin:0 auto;}
+.act-rule-box .act-rule{
+    color:#c4ae83;
+    font-size:18px;
+    line-height:39px;
+    padding:0 25px;
+    margin-top:25px;
+}
+/* 弹窗 */
+.zillion-pub-wd {
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    left: 50%;
+    width:584px;
+    height:393px;
+    margin-left:-292px;
+    margin-top:-196px;
+    background:#fff;
+    border-radius:4px;
+    text-align:center;
+}
+.zillion-pub-wd .zillWd-head em.kuBao-icon{
+    display:block;
+    margin:0 auto 10px;
+    background-image:url(../images/zillion-icon.png);
+    background-repeat:no-repeat;
+}
+.zillion-pub-wd .zillWd-head em.kuBao-priIcon{
+    width:292px;
+    height:170px;
+    margin-top:-68px;
+    background-position:-5px -274px;
+}
+.zillion-pub-wd .zillWd-head em.kuBao-failIcon{
+     width:294px;
+    height:86px;
+    margin-top:65px;
+    margin-bottom:35px;
+    background-position:-7px -449px;
+}
+.zillion-pub-wd .zillWd-head em.kuBao-noChance{
+     width:158px;
+    height:182px;
+    margin-top:-68px;
+    margin-bottom:25px;
+    background-position:-73px -543px; 
+}
+.zillion-pub-wd .zillWd-head em.close-btn{
+    position:absolute;
+    right:15px;
+    top:10px;
+    width:20px;
+    line-height:20px;
+    font-size:30px;
+    color:#222;
+    cursor:pointer;
+    font-weight:bold;
+}
+.zillion-pub-wd .zillWd-body .wd-head{position:relative;}
+.zillion-pub-wd .zillWd-body .zillWd-info{color:#222;font-size:24px;font-weight:bold;}
+.zillion-pub-wd .zillWd-body .zill-price{
+    color:#d60909;
+    font-size:24px;
+    font-weight:bold;
+    padding:33px 0;
+}
+.zillion-pub-wd .zillWd-body .zill-sel-vip{color:#222;font-size:18px;margin-bottom:36px;}
+.zillion-pub-wd .zillWd-body .zill-sel-vip a{
+    display:inline-block;
+    width:117px;
+    height:45px;
+    line-height:45px;
+    text-align:center;
+    border:1px solid #cecece;
+    border-radius:3px;
+    margin:0 10px;
+    font-weight:bold;
+}
+.zillion-pub-wd .zillWd-body .zill-sel-vip a.on{border-color:#078cca;}
+.zillion-pub-wd .zillWd-body>a.zillWd-btn{
+    display:inline-block;
+    margin:0 auto;
+    min-width:103px;
+    padding:0 24px;
+    height:45px;
+    line-height:45px;
+    text-align:center;
+    border:3px solid #5b3507;
+    border-radius:25px;
+    background:#fdf04d;
+    background: -moz-linear-gradient(top,  #fdf04d 0%, #e1a010 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdf04d), color-stop(100%,#e1a010));
+    background: -webkit-linear-gradient(top,  #fdf04d 0%,#e1a010 100%);
+    background: -o-linear-gradient(top,  #fdf04d 0%,#e1a010 100%);
+    background: -ms-linear-gradient(top,  #fdf04d 0%,#e1a010 100%);
+    background: linear-gradient(to bottom,  #fdf04d 0%,#e1a010 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdf04d', endColorstr='#e1a010',GradientType=0 );
+    font-size:18px;
+    color:#853f11;
+    font-weight:bold;
+}
+.zillion-pub-wd .zillWd-body .kuCoin-use{color:#727272;margin-top:20px;}
+.zillion-pub-wd .zillWd-body .kuCoin-use a{text-decoration:underline;color:#727272;margin-left:8px;}
+.zillion-pub-wd .zillWd-body .kuCoin-use a:hover{color:#0063ca;}
+.zillion-pub-wd .zillWd-body .entity-info{color:#606060;font-size:16px;line-height:35px;}
+/* 复制链接弹窗 */
+.zillion-pub-wd .copy-shareAct{width:482px;height:38px;position:relative;margin:32px auto 0;}
+.zillion-pub-wd .copy-shareAct .copy-info{
+    background:#fff;
+    width:376px;
+    height:36px;
+    line-height:36px;
+    border:1px solid #c7c7c7;
+    border-right:none;
+    padding-left:14px;
+}
+.zillion-pub-wd .copy-shareAct .copy-link{
+    width:89px;
+    height:36px;
+    line-height:36px;
+    background:#7f574c;
+    background: -moz-linear-gradient(top,  #7f574c 0%, #67473e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7f574c), color-stop(100%,#67473e));
+    background: -webkit-linear-gradient(top,  #7f574c 0%,#67473e 100%);
+    background: -o-linear-gradient(top,  #7f574c 0%,#67473e 100%);
+    background: -ms-linear-gradient(top,  #7f574c 0%,#67473e 100%);
+    background: linear-gradient(to bottom,  #7f574c 0%,#67473e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7f574c', endColorstr='#67473e',GradientType=0 );
+    border:1px solid #412c2a;
+    color:#f6dba3;
+    text-align:center;
+    cursor:pointer;
+    font-weight:bold;
+}
+.copy-shareAct .copy-hintInfo{
+    position:absolute;
+    right:-5px;
+    top:-40px;;
+    padding:0 14px;
+    height:30px;
+    line-height:30px;
+    border-radius:5px;
+    background:#fff;
+    border:1px solid #a6a6a6;
+}
+.copy-shareAct .copy-hintInfo i{
+    display:inline-block;
+    width:12px;
+    height:12px;
+    background:url(../images/group-actIcon.png) no-repeat -23px -57px;
+    vertical-align:-1px;
+    margin-right:5px;
+}
+.copy-shareAct .copy-hintInfo i.error-hint{
+    background-position:-3px -57px;
+}
+.copy-shareAct .triangle-box{position:relative;}
+.copy-shareAct .triangle-box:after{
+    content:"";
+    position:absolute;
+    left:50%;
+    margin-left:-7px;
+    width:14px;
+    height:8px;
+    background:url(../images/group-actIcon.png) no-repeat -43px -59px;
+}
+
